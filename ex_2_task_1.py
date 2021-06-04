@@ -48,10 +48,8 @@ import re
 regex = "[\w-]{3,16}@\\w{3,16}\\.\\w{2,3}$"
 
 def is_valid_email_address(email):
-    if(re.search(regex, email)):
-        return("Valid e-mail address")
-    else: return("Invalid e-mail address.")
-
+    return re.match(r"[\w-]{3,16}@\w{3,16}\.\w{2,3}$", email)
+    
 email_list = ["charding@iastate.edu", 
         "chris.edu",
         "chris@edu",
@@ -80,7 +78,15 @@ if __name__ == "__main__":
 #The list verification works. 
 #The function, however, was not used and couldn't figure out how to do it. 
 
-        
+email = input("Enter your e-mail")
+valid = is_valid_email_address(email)
+if valid: 
+    print(email, "is correct")
+else: 
+    print("Invalid email, try again", email)
+    
+
+
         
         
 
