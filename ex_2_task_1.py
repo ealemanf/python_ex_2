@@ -44,12 +44,16 @@
 #use $ to avoid additional characters after the email
 
 import re
+
+regex = "[\w-]{3,16}@\\w{3,16}\\.\\w{2,3}$"
+
 def is_valid_email_address(email):
-    return re.match(r"[\w-]{3,16}@\w{3,16}\.\w{2,3}$", email)
+    if(re.search(regex, email)):
+        print("Valid e-mail address")
+    else: print ("Invalid e-mail address.")
 
-#now I should be ready to write the program by defining email
 
-email = "abcd@gmail.com"
+email = "1@gmail.com"
 valid = is_valid_email_address(email)
 if valid:
     print(email, "is a valid e-mail address.")
@@ -77,8 +81,8 @@ if __name__ == "__main__":
     for e in email_list:
         r, email = is_valid_email_address(email) 
         if r == None:
-            print(email, s) # OK
+            print(e, email) # OK
         else:
-            print(f"{email} - error: {email}, error code: {r}") # Error
+            print(f"{e} - error: {email}, error code: {r}") # Error
 
         
