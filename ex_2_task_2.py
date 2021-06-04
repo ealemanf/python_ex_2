@@ -40,7 +40,6 @@ attempts_left = 3
 while True:
     email = input("Enter your e-mail address.")
     r, err_str = is_valid_email_address(email)
-
     if r == None:
         print (email, "Valid.")
 

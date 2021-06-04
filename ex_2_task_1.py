@@ -49,12 +49,9 @@ regex = "[\w-]{3,16}@\\w{3,16}\\.\\w{2,3}$"
 
 def is_valid_email_address(email):
     if(re.search(regex, email)):
-        print("Valid e-mail address")
-    else: print ("Invalid e-mail address.")
+        return("Valid e-mail address")
+    else: return("Invalid e-mail address.")
 
-    
-
-# This if ensures that the following is NOT run if this file was imported as a module (which we'll do next!)
 email_list = ["charding@iastate.edu", 
         "chris.edu",
         "chris@edu",
@@ -66,8 +63,9 @@ email_list = ["charding@iastate.edu",
         "chris@letsgo!.org",
         "chris@megasavings.org",
         "tc@tank.com",
-        ]
+        ]   
 
+# This if ensures that the following is NOT run if this file was imported as a module (which we'll do next!)
 if __name__ == "__main__":
     
     
