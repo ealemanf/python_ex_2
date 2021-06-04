@@ -52,20 +52,10 @@ def is_valid_email_address(email):
         print("Valid e-mail address")
     else: print ("Invalid e-mail address.")
 
-
-email = "1@gmail.com"
-valid = is_valid_email_address(email)
-if valid:
-    print(email, "is a valid e-mail address.")
-else:
-    print("Invalid e-mail format.", email)
     
 
 # This if ensures that the following is NOT run if this file was imported as a module (which we'll do next!)
-if __name__ == "__main__":
-
-    # tests, including edge cases (incomplete? add more!)
-    email_list = ["charding@iastate.edu", 
+email_list = ["charding@iastate.edu", 
         "chris.edu",
         "chris@edu",
         "@bla.edu",
@@ -77,12 +67,20 @@ if __name__ == "__main__":
         "chris@megasavings.org",
         "tc@tank.com",
         ]
+
+if __name__ == "__main__":
+    
+    
     # validate each email from the list
     for e in email_list:
-        r, email = is_valid_email_address(email) 
-        if r == None:
-            print(e, email) # OK
+        match = re.search(r"[\w-]{3,16}@\\w{3,16}\\.\\w{2,3}$", e)
+        if match != None:
+            print("Correct format", e)
         else:
-            print(f"{e} - error: {email}, error code: {r}") # Error
+            print ("Incorrect Format", e)
+        
+        
+        
+
 
         
