@@ -78,6 +78,10 @@ if __name__ == "__main__":
             print("Correct format", e)
         else:
             print ("Incorrect Format", e)
+
+#The list verification works. 
+#The function, however, was not used and couldn't figure out how to do it. 
+
         
         
         
