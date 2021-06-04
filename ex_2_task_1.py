@@ -45,7 +45,7 @@
 
 import re
 def is_valid_email_address(email):
-    return re.match(r"[\w-]{3,16}@{3,16}\.\w{2,3}$", email)
+    return re.match(r"[\w-]{3,16}@\w{3,16}\.\w{2,3}$", email)
 
 #now I should be ready to write the program by defining email
 
@@ -54,7 +54,7 @@ valid = is_valid_email_address(email)
 if valid:
     print(email, "is a valid e-mail address.")
 else:
-    print("Invalid e-mail format.")
+    print("Invalid e-mail format.", email)
     
 
 # This if ensures that the following is NOT run if this file was imported as a module (which we'll do next!)
