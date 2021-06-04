@@ -34,13 +34,27 @@
 # As proof, please manually copy/paste the console output for one run into a file called
 # results1.txt
 
-def is_valid_email_address(s):
-    
-    # your code here
+#The pattern for a regex should include
+# r at the beginning to write in raw format
+# \w to get letters, numbers and hyphen. 
+# @ to get one @symbol
+# \w{3,16} to check the length in the pre@ part and post @part
+# \. to get a . character
+# to make sure there are no more than three characters after the last dot. \w{2,3}
+#use $ to avoid additional characters after the email
 
-    
+import re
+def is_valid_email_address(email):
+    return re.match(r"[\w-]{3,16}@{3,16}\.\w{2,3}$", email)
 
+#now I should be ready to write the program by defining email
 
+email = "abcd@gmail.com"
+valid = is_valid_email_address(email)
+if valid:
+    print(email, "is a valid e-mail address.")
+else:
+    print("Invalid e-mail format.")
     
 
 # This if ensures that the following is NOT run if this file was imported as a module (which we'll do next!)
@@ -61,10 +75,10 @@ if __name__ == "__main__":
         ]
     # validate each email from the list
     for e in email_list:
-        r, s = is_valid_email_address(e) 
+        r, email = is_valid_email_address(email) 
         if r == None:
-            print(e, s) # OK
+            print(email, s) # OK
         else:
-            print(f"{e} - error: {s}, error code: {r}") # Error
+            print(f"{email} - error: {email}, error code: {r}") # Error
 
         
