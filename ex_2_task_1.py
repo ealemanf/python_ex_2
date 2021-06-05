@@ -45,10 +45,8 @@
 
 import re
 
-regex = "[\w-]{3,16}@\\w{3,16}\\.\\w{2,3}$"
-
 def is_valid_email_address(email):
-    return re.match('^[a-zA-Z0-9_.+-]{3,16}@[a-zA-Z0-9-]{3,16}\.[a-zA-Z0-9-.]{2,3}$', email)
+    return re.match('^[a-zA-Z0-9_.+-]{3,16}@[a-zA-Z0-9-]{2,16}\.[a-zA-Z0-9-.]{2,3}$', email)
     
 email_list = ["charding@iastate.edu", 
         "chris.edu",
@@ -69,7 +67,7 @@ if __name__ == "__main__":
     
     # validate each email from the list
     for e in email_list:
-        match = re.search('^[a-zA-Z0-9_.+-]{3,16}@[a-zA-Z0-9-]{3,16}\.[a-zA-Z0-9-.]{2,3}$', e)
+        match = re.search('^[a-zA-Z0-9_.+-]{3,16}@[a-zA-Z0-9-]{2,16}\.[a-zA-Z0-9-.]{2,3}$', e)
         if match != None:
             print("Correct format", e)
         else:

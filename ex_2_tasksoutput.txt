@@ -1,0 +1,25 @@
+hon.python-2021.5.842923320\pythonFiles\lib\python\debugpy\launcher' '63686' '--' 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel\python_ex_2\ex_2_task_1.py'
+PS C:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel>  c:; cd 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel'; & 'C:\Users\UTEC\anaconda3\python.exe' 'c:\Users\UTEC\.vscode\extensions\ms-python.python-2021.5.842923320\pythonFiles\lib\python\debugpy\launcher' '58370' '--' 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel\python_ex_2\ex_2_task_1.py' 
+PS C:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel>  c:; cd 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel'; & 'C:\Users\UTEC\anaconda3\python.exe' 'c:\Users\UTEC\.vscode\extensions\ms-python.python-2021.5.842923320\pythonFiles\lib\python\debugpy\launcher' '51265' '--' 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel\python_ex_2\ex_2_task_1.py' 
+PS C:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel>  c:; cd 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel'; & 'C:\Users\UTEC\anaconda3\python.exe' 'c:\Users\UTEC\.vscode\extensions\ms-python.python-2021.5.842923320\pythonFiles\lib\python\debugpy\launcher' '55013' '--' 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel\python_ex_2\ex_2_task_1.py' 
+PS C:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel>  c:; cd 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel'; & 'C:\Users\UTEC\anaconda3\python.exe' 'c:\Users\UTEC\.vscode\extensions\ms-python.python-2021.5.842923320\pythonFiles\lib\python\debugpy\launcher' '55083' '--' 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel\python_ex_2\ex_2_task_1.py' 
+PS C:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel>  c:; cd 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel'; & 'C:\Users\UTEC\anaconda3\python.exe' 'c:\Users\UTEC\.vscode\extensions\ms-python.python-2021.5.842923320\pythonFiles\lib\python\debugpy\launcher' '54274' '--' 'c:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel\python_ex_2\ex_2_task_1.py' 
+Correct format charding@iastate.edu
+Incorrect Format chris.edu
+Incorrect Format chris@edu
+Incorrect Format @bla.edu
+Incorrect Format throatwobblermangrove@mpfc.org
+Incorrect Format chris@X.com
+Correct format chris.harding@iastate.edu
+Correct format chris@pymart.biz
+Incorrect Format chris@letsgo!.org
+Correct format chris@megasavings.org
+Incorrect Format tc@tank.com
+Enter your e-mail ealeman
+Invalid email, try again  ealeman
+Enter your e-mail
+Invalid email, try again
+Enter your e-mailealeman
+Invalid email, try again ealeman
+Sorry. All your attempts have been used up.
+PS C:\Users\UTEC\Desktop\hci584\lecture2\python_ex2_ezequiel> 

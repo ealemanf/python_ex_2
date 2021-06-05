@@ -33,19 +33,17 @@
 from ex_2_task_1 import is_valid_email_address as is_valid
 
 gave_up = False
-attempts_left = 3
+attempts= 0
 
-# your code - start
-
-while True:
-    email = input("Enter your e-mail address.")
-    r, err_str = is_valid_email_address(email)
-    if r == None:
-        print (email, "Valid.")
-
-
-# your code - end
-if not gave_up:
-    print("valid email", email)
-else:
-    print("invalid email", email)
+while attempts < 4:
+    email = input("Enter your e-mail")
+    attempts = attempts + 1
+    valid = is_valid_email_address(email)
+    if valid: 
+        print(email, "is correct")
+    else: 
+        print("Invalid email, try again", email)
+    if attempts > 3:
+        gave_up = True
+        print("Sorry. All your attempts have been used up.")
+        break
